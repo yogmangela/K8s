@@ -1,0 +1,37 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: DATA+OMITTED
+    server: https://0142CCEA379ABCCA285120B2FA4B300D.sk1.eu-west-1.eks.amazonaws.com
+  name: yogs.eu-west-1.eksctl.io
+contexts:
+- context:
+    cluster: ""
+    namespace: mystuff
+    user: ""
+  name: my-context
+- context:
+    cluster: kuar-cluster.eu-west-1.eksctl.io
+    user: yogesh@kuar-cluster.eu-west-1.eksctl.io
+  name: yogesh@kuar-cluster.eu-west-1.eksctl.io
+- context:
+    cluster: yogs.eu-west-1.eksctl.io
+    user: yogesh@yogs.eu-west-1.eksctl.io
+  name: yogesh@yogs.eu-west-1.eksctl.io
+current-context: my-context
+kind: Config
+preferences: {}
+users:
+- name: yogesh@yogs.eu-west-1.eksctl.io
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - eks
+      - get-token
+      - --cluster-name
+      - yogs
+      - --region
+      - eu-west-1
+      command: aws
+      env: null
