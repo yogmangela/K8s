@@ -15,8 +15,9 @@
 - ### Creating Deployments:
   - [Deployments](Deployments/README.md)
 
-- ### Easiest way to deploy K8's on AWS EKS using open source eckctl:
-  - [Installing K8's on AWS](/EKSinstallation.md)
+- ### Easiest way to deploy K8's on AWS EKS using open source eckctl: 
+- follow [https://eksctl.io](https://eksctl.io)
+- [Installing K8's on AWS](/EKS-AWS/EKSinstallation.md)
 
 # Overview of Kubernetes:
 - ### K8's mindmap
