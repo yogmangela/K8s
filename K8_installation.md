@@ -1,4 +1,4 @@
-# [Installing kubeadm, kubelet and kubectl on all machines:] (https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-kubeadm-kubelet-and-kubectl)
+# [Installing kubeadm, kubelet and kubectl on all machines:](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#installing-kubeadm-kubelet-and-kubectl)
 
 ### Run below command:
 
@@ -76,6 +76,12 @@ kubeadm join 172.31.36.188:6443 --token sd2hhs.ziy2uc6h9f88rpcz \
 --discovery-token-ca-cert-hash sha256:2b83848eff19b113aeb7d28de3aca0cd1d9a4f6fe4fa4b073f9c98cc08dd68f5
 root@ip-172-31-36-188:~#
 ```
+============================================================================================================
+** if you ever loose token here is the command to retrive it back:
+```
+ kubeadm token create --print-join-command
+ ```
+============================================================================================================
 
 ##  Step 5: run below command on NODE as regualt user not Root user. so user like Ubuntu / ec2-user etc. 
 
