@@ -19,6 +19,9 @@
 - follow [https://eksctl.io](https://eksctl.io)
 - [Installing K8's on AWS](/EKS-AWS/EKSinstallation.md)
 
+- ### For K8'S WEB GUI / Dashboard:
+follow [K8'S Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
+
 # Overview of Kubernetes:
 - ### K8's mindmap
 ![K8's](/images/Kubernetes.png)
